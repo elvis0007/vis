@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Operaciones</title>
+    <script src="js/operaciones.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.10.19/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.10.19/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="jquery-easyui-1.10.19/demo/demo.css">
+    <script type="text/javascript" src="jquery-easyui-1.10.19/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-easyui-1.10.19/jquery.easyui.min.js"></script>
+
+    <style>
+        .panel-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .panel {
+            width: calc(10% - 10px);
+            margin: 0 0px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="easyui-panel panel-container" title="Calculadora" style="width:100%;max-width:100%;padding:10px 10px;">
+
+       
+        <div class="easyui-panel" title="Suma" style="width:24%;max-width:24%;padding:10px 10px;">
+
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top"
+                    data-options="prompt:'Ingrese el primer numero ',validType:'number'" style="width:100%;" name="num1"
+                    id="num1">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top"
+                    data-options="prompt:'Ingrese el segundo numero ',validType:'number'" style="width:100%;"
+                    name="num2" id="num2">
+            </div>
+
+            <div style="margin:20px 0;">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:50%;height:32px"
+                    onclick="sumardeNumeros()" value="btnSumar">Sumar</a>
+                <p id="resultadoS"></p>
+            </div>
+
+
+        </div>
+
+        <div class="easyui-panel" title="Resta" style="width:24%;max-width:24%;padding:10px 10px;">
+
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top"
+                    data-options="prompt:'Ingrese el primer numero ',validType:'number'" style="width:100%;" name="num3"
+                    id="num3">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top"
+                    data-options="prompt:'Ingrese el segundo numero ',validType:'number'" style="width:100%;"
+                    name="num4" id="num4">
+            </div>
+
+            <div style="margin:20px 0;">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:50%;height:32px"
+                    onclick="restardeNumeros()" value="btnRestar">Restar</a>
+
+            </div>
+            <p id="resultadoR"></p>
+
+        </div>
+        
+
+        <div class="easyui-panel" title="Multiplicacion" style="width:24%;max-width:24%;padding:10px 10px;">
+
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top"
+                    data-options="prompt:'Ingrese el primer numero ',validType:'number'" style="width:100%;" name="num5"
+                    id="num5">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top"
+                    data-options="prompt:'Ingrese el segundo numero ',validType:'number'" style="width:100%;"
+                    name="num6" id="num6">
+            </div>
+
+
+            <div style="margin:20px 0;">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:75%;height:32px"
+                    onclick="multiplicardeNumeros()" value="btnMultiplicar">Multiplicar</a>
+
+            </div>
+
+            <p id="resultadoM"></p>
+
+        </div>
+
+        <div class="easyui-panel" title="Divicion" style="width:24%;max-width:24%;padding:10px 10px;">
+
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top"
+                    data-options="prompt:'Ingrese el primer numero ',validType:'number'" style="width:100%;" name="num7"
+                    id="num7">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top"
+                    data-options="prompt:'Ingrese el segundo numero ',validType:'number'" style="width:100%;"
+                    name="num8" id="num8">
+            </div>
+
+
+            <div style="margin:20px 0;">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:50%;height:32px"
+                    onclick="dividirdeNumeros()" value="btnDividir">Dividir</a>
+
+            </div>
+
+
+            <p id="resultadoD"></p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

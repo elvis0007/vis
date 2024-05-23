@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(220, 186, 191);
+}
+header{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+
+}
+nav{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: rgb(65, 11, 11);
+}
+nav ul{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    text-align: none  ;
+    
+}
+nav ul li{
+    display: inline-block;
+    width: 24%;
+    margin: auto;
+    line-height: 50px;
+    list-style: none;
+    color: white;
+}
+nav ul li a{
+    color: white;
+    text-decoration:none;
+}
+
+section{
+    position: relative;
+    margin: auto;
+    padding: 5px;
+}
+footer{
+    background-color: rgb(69, 18, 18);
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+.p{
+    color: blueviolet;
+}
+
+.titulos{
+    font-size: 25px;
+    color: brown;
+}
